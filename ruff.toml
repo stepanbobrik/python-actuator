@@ -1,3 +1,6 @@
 [lint]
 select = ["ALL"]
 ignore = ["COM812", "D203", "D213"]
+
+[lint.per-file-ignores]
+"tests/*.py" = ["S101"]

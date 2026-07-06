@@ -3,6 +3,7 @@
  - Code Should be stay simple as possible
  - Advanced usage typing, type hints, modern linting like ruff mypy ty wps etc.
  - PythonCodeGenerationRules.md should be respect
+ - Commit messages should follow Conventional Commits
 
 # project
  - It s healthchecks module
@@ -10,7 +11,7 @@
  - we can have mupltiple indicators/components in one app.
 
 # structure
- python_actuator/ main module dir
- python_actuator/protocols.py
- python_actuator/indicators.py
- python_actuator/models.py
+ src/python_actuator/ main module dir
+ src/python_actuator/protocols.py
+ src/python_actuator/indicators.py
+ src/python_actuator/models.py

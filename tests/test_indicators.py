@@ -1,6 +1,9 @@
 """Tests for health indicator orchestration."""
 
 from dataclasses import dataclass
+from importlib import resources
+from importlib.util import find_spec
+from pathlib import Path
 from typing import final
 
 from python_actuator.indicators import HealthEndpoint
@@ -59,3 +62,21 @@ def test_health_endpoint_returns_down_when_component_is_down() -> None:
     result = endpoint.health()
 
     assert result.status is HealthStatus.DOWN
+
+
+def test_package_contains_pep_561_marker() -> None:
+    """Package exposes the PEP 561 marker file."""
+    marker_file = resources.files("python_actuator").joinpath("py.typed")
+
+    assert marker_file.is_file()
+
+
+def test_package_is_imported_from_src_layout() -> None:
+    """Package import resolves from the src layout."""
+    package_spec = find_spec("python_actuator")
+    expected_origin = (
+        Path(__file__).resolve().parents[1] / "src" / "python_actuator" / "__init__.py"
+    )
+
+    assert package_spec is not None
+    assert package_spec.origin == str(expected_origin)

@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python-actuator"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
 ]
 description = "Spring Boot-compatible health checks for Python applications."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = []
 
 [dependency-groups]

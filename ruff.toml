@@ -2,5 +2,8 @@
 select = ["ALL"]
 ignore = ["COM812", "D203", "D213"]
 
+[lint.flake8-copyright]
+notice-rgx = "(?i)(Copyright|SPDX-FileCopyrightText)"
+
 [lint.per-file-ignores]
 "tests/*.py" = ["S101"]

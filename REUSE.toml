@@ -1,0 +1,22 @@
+version = 1
+
+[[annotations]]
+path = [
+    ".gitignore",
+    ".pre-commit-config.yaml",
+    ".python-version",
+    "AGENTS.md",
+    "Makefile",
+    "PythonCodeGenerationRules.md",
+    "main.py",
+    "mypy.ini",
+    "pyproject.toml",
+    "ruff.toml",
+    "setup.cfg",
+    "src/python_actuator/py.typed",
+    "tests/**",
+    "uv.lock",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Bobrik Stepan"
+SPDX-License-Identifier = "MIT"

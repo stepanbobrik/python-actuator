@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Bobrik Stepan
+#
+# SPDX-License-Identifier: MIT
+
 """Health response models."""
 
 from dataclasses import dataclass, field

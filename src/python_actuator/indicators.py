@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Bobrik Stepan
+#
+# SPDX-License-Identifier: MIT
+
 """Health indicator orchestration."""
 
 from __future__ import annotations

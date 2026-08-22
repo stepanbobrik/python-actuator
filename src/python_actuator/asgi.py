@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Bobrik Stepan
+#
+# SPDX-License-Identifier: MIT
+
 """ASGI adapter for the health endpoint."""
 
 from __future__ import annotations

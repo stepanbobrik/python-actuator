@@ -6,11 +6,17 @@ build-backend = "setuptools.build_meta"
 name = "python-actuator"
 version = "0.1.1"
 authors = [
+    { name = "Stepan Bobrik" },
 ]
 description = "Spring Boot-compatible health checks for Python applications."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+[project.urls]
+Repository = "https://github.com/stepanbobrik/python-actuator"
+Issues = "https://github.com/stepanbobrik/python-actuator/issues"
+Security = "https://github.com/stepanbobrik/python-actuator/blob/master/SECURITY.md"
 
 [dependency-groups]
 dev = [

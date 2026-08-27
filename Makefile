@@ -21,4 +21,4 @@ reuse:
 
 types: ty mypy
 
-check: fmt types wps reuse
+check: fmt types wps reuse cov
